@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ürün Listesi</title>
+</head>
+<body>
+    <header>
+        <h1>Ürünler</h1>
+    </header>
+
+    <div class="filter-container">
+        <input type="text" id="searchInput" placeholder="Ürün ara...">
+        <select id="sortSelect">
+            <option value="">Akıllı Sıralama</option>
+            <option value="asc">En Düşük Fiyat</option>
+            <option value="desc">En Yüksek Fiyat</option>
+        </select>
+    </div>
+
+    <div id="fetch-error">Ürünler alınamadı, lütfen daha sonra tekrar deneyin.</div>
+    <div id="no-products">Aramanıza uygun ürün bulunamadı.</div>
+
+    <div>
+        <div id="products" class="container"></div>
+    </div>
+
+    <footer>Hyper Teknoloji</footer>
+    <script src="app.js"></script>
+</body>
+</html>
